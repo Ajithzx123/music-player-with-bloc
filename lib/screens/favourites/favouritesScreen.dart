@@ -54,12 +54,7 @@ class Favourites extends StatelessWidget {
                       fontSize: 26.sp,
                       fontWeight: FontWeight.bold),
                 ),
-                // IconButton(
-                //     onPressed: () {},
-                //     icon: const Icon(
-                //       Icons.add_circle,
-                //       color: Colors.white,
-                //     ))
+             
               ],
             ),
           ),
@@ -83,9 +78,7 @@ class Favourites extends StatelessWidget {
                       ])),
               child: Padding(
                   padding: const EdgeInsets.all(15.0),
-                  // child: ValueListenableBuilder(
-                      // valueListenable: box.listenable(),
-                  //     builder: (context, boxes, _) {
+                
 
                   child: BlocBuilder<FavouriteBloc, FavouriteState>(
                     builder: (context, state) {
@@ -152,9 +145,7 @@ class Favourites extends StatelessWidget {
                                   ),
                                   trailing: IconButton(
                                     onPressed: () {
-                                      // likedSongs.removeAt(index);
-                                      // // context.read<PlayerCubit>().deleteSong(index);
-                                      // box.put("favorites", likedSongs);
+                                    
                                       context.read<FavouriteBloc>().add(FavouriteDeleteEvent(index: index));
                                     },
                                     icon: const Icon(Icons.delete,

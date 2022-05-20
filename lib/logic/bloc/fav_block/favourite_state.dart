@@ -10,6 +10,17 @@ class FavDelete extends FavouriteState{
     @override
   List<Object?> get props => [list];
 }
+// class FavAdd  extends FavouriteState{
+//   final List<dynamic>? list;
+
+//   FavAdd({required this.list});
+//   @override
+//   List<Object?> get props => [list];
+  
+// }
+
+
+
 
 class FavDeleteSecond extends FavouriteState{  
     @override

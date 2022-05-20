@@ -12,3 +12,10 @@ class FavouriteDeleteEvent extends FavouriteEvent{
   @override
   List<Object> get props => [index];
 }
+
+// class FAvouriteAddEvent extends FavouriteEvent{
+//   final Audio blocaudio;
+//   const FAvouriteAddEvent({ required this.blocaudio});
+//   @override
+//   List<Object?> get props => [blocaudio];
+// }

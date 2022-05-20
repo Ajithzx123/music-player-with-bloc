@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:marquee/marquee.dart';
+import 'package:music_player/logic/bloc/fav_block/favourite_bloc.dart';
 import 'package:music_player/logic/cubit/cubit_player/player_cubit.dart';
 import 'package:music_player/model/box-instance.dart';
 import 'package:music_player/model/hivemodel.dart';
@@ -153,6 +154,7 @@ class _PlayingSCreenState extends State<PlayingSCreen> {
                                   ),
                                   onPressed: () async {
                                     likedSongs?.add(currentSong);
+                                    // context.read<FavouriteBloc>().add(FAvouriteAddEvent(blocaudio: myAudio));
                                     box.put("favorites", likedSongs!);
                                     likedSongs = box.get("favorites");
                                     context

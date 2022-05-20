@@ -273,7 +273,7 @@ class _PlaylistsState extends State<Playlists> {
                                                     width: 20.w,
                                                   ),
                                                   SizedBox(
-                                                    width: 200,
+                                                    width: 150.w,
                                                     child: Text(
                                                       playlists[index]
                                                           .toString(),
@@ -333,7 +333,7 @@ class _PlaylistsState extends State<Playlists> {
                                                                         ),
                                                                         SizedBox(
                                                                           height:
-                                                                              40.h,
+                                                                              30.h,
                                                                         ),
                                                                         Padding(
                                                                           padding: const EdgeInsets.fromLTRB(
